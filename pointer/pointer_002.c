@@ -43,3 +43,42 @@ int main002_01() {
 
     return 0;
 }
+
+int main002_02() {
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    //指向数组的指针
+    int *p = arr;
+    //p是变量  arr是常量
+    //p是一个指针 4个字节大小
+    //arr是一个数组 40字节大小
+    printf("指针类型大小：%d\n", sizeof(p));
+    printf("数组大小：%d\n", sizeof(arr));
+
+    //p[i];
+    //*(p+i);
+    return 0;
+}
+
+//数组作为函数参数会退化为指针 丢失数组的精度(不知道数组的长度，需要调用方作为参数传递过来)
+void BubbleSort2(int *arr, int len) {
+    for (int i = 0; i < len - 1; i++) {
+        for (int j = 0; j < len - 1 - i; j++) {
+            if (*(arr + j) > *(arr + j + 1)) {//*(p + j)写法等同于arr[j]
+                int temp = *(arr + j);
+                *(arr + j) = *(arr + j + 1);
+                *(arr + j + 1) = temp;
+            }
+        }
+    }
+}
+
+int main0103(void) {
+    int arr[] = {9, 1, 5, 6, 3, 8, 10, 2, 7, 4};
+
+    BubbleSort2(arr, 10);
+
+    for (int i = 0; i < 10; i++) {
+        printf("%d\n", arr[i]);
+    }
+    return 0;
+}

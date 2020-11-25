@@ -11,6 +11,7 @@ include_directories(pointer)
 add_executable(myc_demo
         pointer/pointer_001.c
         pointer/pointer_002.c
+        pointer/pointer_003.c
         function/function_001.c
         function/function_002.c
         array/array_001.c
