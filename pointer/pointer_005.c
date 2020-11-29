@@ -61,7 +61,7 @@ char *my_strstr(char *src, char *dest) {
     return NULL;
 }
 
-int main() {
+int main0502() {
     char src[] = "llllhelle worldllo";
     char dest[] = "lle";
 

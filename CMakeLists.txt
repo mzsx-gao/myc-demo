@@ -19,4 +19,5 @@ add_executable(myc_demo
         array/array_001.c
         array/array_002.c
         array/array_003.c
+        string/string_001.c
         )
