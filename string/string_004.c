@@ -53,7 +53,7 @@ int main_strcmp() {
 /*
  * 字符串格式化
  */
-int main_sprintf1() {
+int main_sprintf() {
     char ch[100];
 //    sprintf(ch, "hello world");
 //    sprintf(ch, "%d+%d=%d", 1, 2, 3);
@@ -67,7 +67,7 @@ int main_sprintf1() {
 }
 
 //sscanf:从str指定的字符串读取数据，并根据参数format字符串来转换并格式化数据
-int main_sprintf2(void) {
+int main_sscanf(void) {
     char ch1[] = "abc+110=3";
     int a, b, c;
     sscanf(ch1, "%x+%o=%d", &a, &b, &c);
@@ -83,7 +83,7 @@ int main_sprintf2(void) {
     char str[100];
 
     sscanf(ch, "%[^\n]", str);
-    printf("%s\n",str);
+    printf("%s\n", str);
 
     printf("=========================\n");
     sscanf(ch, "%5s%s", str1, str2);
@@ -96,4 +96,25 @@ int main_sprintf2(void) {
 
 /*
  * 字符串查找
+ * 1.strchr:字符串中查找字符
+ * 2.strstr:字符串中查找字符串
  */
+int main_strchr() {
+    char ch[] = "hello world";
+    char c = 'l';
+    //在字符串ch中查找字母c出现的位置
+    char* p = strchr(ch, c);
+    printf("%s\n", p);
+
+    return EXIT_SUCCESS;
+}
+
+int main_strstr(void) {
+    char ch[] = "hello world";
+    char str[] = "llo";
+    //在字符串ch中查找字符串str出现的位置
+    char *p = strstr(ch, str);
+    printf("%c\n", *p);
+    printf("%s\n", p);
+    return 0;
+}
