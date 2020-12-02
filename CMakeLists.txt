@@ -24,4 +24,7 @@ add_executable(myc_demo
         base_string/string_003.c
         base_string/string_004.c
         base_string/string_005.c
+        base_scope/scope_001.c
+        base_scope/scope_002.c
+        base_scope/scope_003.c
         )
