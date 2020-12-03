@@ -90,6 +90,6 @@ static void fun07() {
     printf("hello world1\n");
 }
 
-int main(void) {
+int main_sc005(void) {
     fun07();
 }
