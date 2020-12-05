@@ -25,6 +25,13 @@ add_executable(myc_demo
         base_string/string_004.c
         base_string/string_005.c
         base_scope/scope_001.c
-        base_scope/scope_002.c
-        base_scope/scope_003.c
+        base_scope/memory_001.c
+        base_scope/memory_002.c
+        base_scope/memory_003.c
+        base_scope/memory_004.c
+        base_struct/struct_001.c
+        base_struct/struct_002.c
+        base_struct/struct_003.c
+        base_struct/struct_004.c
+        base_struct/struct_005.c
         )

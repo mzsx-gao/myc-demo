@@ -15,7 +15,7 @@ static int c1;
 //初始化静态全局变量
 static int d1 = 10;
 
-int main() {
+int main_mem001() {
     //局部变量
     int e1 = 10;
     //未初始化的静态局部变量
