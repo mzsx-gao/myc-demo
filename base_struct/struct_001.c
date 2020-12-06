@@ -40,6 +40,7 @@ int main_stu01() {
 
 int main_stu02(void) {
     struct student stu;
+    //这里注意数组名称本身就是地址，所以不需要加"&"
     scanf("%s%d%d%s", stu.name, &stu.age, &stu.score, stu.addr);
     printf("姓名：%s\n", stu.name);
     printf("年龄：%d\n", stu.age);
