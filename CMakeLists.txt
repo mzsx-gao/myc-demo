@@ -7,6 +7,9 @@ include_directories(.)
 include_directories(base_function)
 include_directories(base_array)
 include_directories(base_pointer)
+include_directories(base_scope)
+include_directories(base_struct)
+include_directories(base_string)
 
 add_executable(myc_demo
         base_pointer/pointer_001.c
@@ -34,4 +37,6 @@ add_executable(myc_demo
         base_struct/struct_003.c
         base_struct/struct_004.c
         base_struct/struct_005.c
+        base_struct/struct_006.c
+        base_struct/struct_007.c
         )
