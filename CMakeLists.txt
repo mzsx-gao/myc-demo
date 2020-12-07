@@ -40,4 +40,8 @@ add_executable(myc_demo
         base_struct/struct_006.c
         base_struct/struct_007.c
         base_file/file_001.c
+        base_file/file_002.c
+        base_file/file_003.c
+        base_file/file_004.c
+        base_file/file_005.c
         )
