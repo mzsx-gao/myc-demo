@@ -60,7 +60,7 @@ int main_file10(void) {
     return 0;
 }
 
-int main(void) {
+int main_file11(void) {
     FILE *fp = fopen("../base_file/filesource/b.txt", "w");
     if (!fp)
         return -1;
@@ -71,6 +71,7 @@ int main(void) {
         memset(p, 0, 1024);
         //scanf("%s", p);
         //fgets()
+        //%[^\n]:接收换行以外的字符
         scanf("%[^\n]", p);
         //吞噬回车\n
         getchar();
