@@ -86,7 +86,7 @@ int stuc_read(void) {
     return 0;
 }
 
-int main() {
+int mainfile17() {
     stuc_write();
     stuc_read();
 }
