@@ -41,6 +41,7 @@ int main_filecopy(int argc, char *argv[]) {
         temp = (char *) malloc(sizeof(char) * SIZE);
         size = SIZE;
     } else {
+        //+10是为了保证足够用，比如说有\0或者换行等
         temp = (char *) malloc(sizeof(char) * st.st_size + 10);
         size = st.st_size + 10;
     }

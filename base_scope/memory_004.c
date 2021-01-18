@@ -98,7 +98,7 @@ int main_mem005(void) {
 int main_mem006() {
     //int arr[5][3]
     //开辟二级指针对应的堆空间
-    int **p = (int **) file070(sizeof(int *) * 5);
+    int **p = (int **) (sizeof(int *) * 5);
 
     for (int i = 0; i < 5; i++) {
         //开辟一级指针对应的堆空间

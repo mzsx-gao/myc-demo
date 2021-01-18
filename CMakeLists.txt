@@ -46,4 +46,6 @@ add_executable(myc_demo
         base_file/file_005.c
         base_file/file_006.c
         base_file/file_007.c
+        base_file/file_008.c
+        base_file/file_009.c
         )
